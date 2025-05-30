@@ -23,7 +23,7 @@ const Home = () => {
 
   useEffect(() => {
     const now = new Date();
-    const upcoming = conferences
+    const upcoming = (conferences ?? [])
       .filter((conference) => new Date(conference.starts_at) > now)
       .slice(0, 3);
 
@@ -142,12 +142,13 @@ const Home = () => {
             </div>
           )}
 
-          {!isLoading && !error && upcomingConferences.length === 0 && (
+          {!isLoading && !error && upcomingConferences?.length === 0 && (
             <p className="text-center">No upcoming conferences found.</p>
           )}
 
           {!isLoading &&
             !error &&
+            Array.isArray(upcomingConferences) &&
             upcomingConferences.map((conference) => (
               <Card key={conference.id} className="mb-4">
                 <Card.Body>
