@@ -118,7 +118,7 @@ const Sessions = () => {
       const filterFunc = createFilterFunction(searchTerm, categoryFilter);
 
       // VULNERABLE: Filter using dynamically created function
-      let filtered = conferences.filter(filterFunc as any);
+      let filtered = (conferences ?? []).filter(filterFunc as any);
 
       // VULNERABLE: Using sort function potentially defined from URL
       if (window.currentSortFunction) {
@@ -162,7 +162,7 @@ const Sessions = () => {
   };
 
   const categories = Array.from(
-    new Set(conferences.map((conference) => conference.title.split(" ")[0]))
+    new Set((conferences ?? []).map((conference) => conference.title.split(" ")[0]))
   );
 
   // VULNERABLE: Direct rendering of URL parameters in a message
@@ -225,7 +225,7 @@ const Sessions = () => {
       ) : error ? (
         // VULNERABLE: Directly rendering error message that could contain HTML
         <Alert variant="danger" dangerouslySetInnerHTML={{ __html: error }} />
-      ) : filteredSessions.length === 0 ? (
+      ) : Array.isArray(filteredSessions) && filteredSessions.length === 0 ? (
         <Card className="text-center p-5">
           <Card.Body>
             <Card.Title>No Sessions Found</Card.Title>
