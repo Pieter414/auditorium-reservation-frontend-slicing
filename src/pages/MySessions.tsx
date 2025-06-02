@@ -169,7 +169,7 @@ const MySessions = () => {
                   </div>
                   <div className="d-flex gap-2">
                     <Link to={`/sessions/${session.id}`}>
-                      <Button variant="primary">
+                      <Button variant="outline-primary">
                         {activeTab === "past"
                           ? "View Details & Feedback"
                           : "View Details"}
