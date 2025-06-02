@@ -63,3 +63,12 @@ footer.bg-dark {
 /* Adjust badge colors to match the theme */
 
 
+/* Adjust tab styles to match the theme */
+.nav-link.active {
+  background-color: #D9D9D9 !important;
+}
+
+.nav-tab {
+  background-color: #D9D9D9 !important;
+  border-radius: 0.5rem;
+}
