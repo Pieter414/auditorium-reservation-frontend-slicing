@@ -91,3 +91,12 @@
   box-shadow: 0 0 0 0.25rem rgba(138, 38, 117, 0.25);
 }
 
+/* Custom dropdown styling */
+.dropdown-menu {
+  background-color: rgba(35, 46, 64, 1);
+  color: #adb5bd;
+}
+
+.dropdown-item {
+  color: #adb5bd;
+}
