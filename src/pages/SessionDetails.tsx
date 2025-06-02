@@ -556,7 +556,7 @@ const SessionDetails = () => {
               />
               <h5>{conference.host.name}</h5>
               <Link to={`/users/${conference.host.id}`}>
-                <Button variant="outline-primary" size="sm">
+                <Button variant="secondary" size="sm">
                   View Profile
                 </Button>
               </Link>
