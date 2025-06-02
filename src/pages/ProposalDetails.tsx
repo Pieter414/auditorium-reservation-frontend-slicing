@@ -75,13 +75,17 @@ const ProposalDetails = () => {
   const getStatusBadge = (status: string) => {
     switch (status) {
       case "pending":
-        return <Badge bg="warning">Pending Review</Badge>;
+        return <Badge bg="pending">Pending Review</Badge>
+      case "reviewed":
+        return <Badge bg="reviewed">Reviewed</Badge>
       case "approved":
-        return <Badge bg="success">Approved</Badge>;
+        return <Badge bg="success">Approved</Badge>
+      case "revised":
+        return <Badge bg="revised">Need Revision</Badge>
       case "rejected":
-        return <Badge bg="danger">Rejected</Badge>;
+        return <Badge bg="danger">Rejected</Badge>
       default:
-        return <Badge bg="secondary">Unknown</Badge>;
+        return <Badge bg="secondary">Past's Events</Badge>
     }
   };
 
