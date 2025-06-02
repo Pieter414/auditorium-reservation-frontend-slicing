@@ -1,6 +1,6 @@
 import { Pagination } from "./common.types";
 
-export type ConferenceStatus = "pending" | "approved" | "rejected";
+export type ConferenceStatus = "pending" | "reviewed" | "approved" | "revised" | "rejected";
 
 export interface Conference {
   id: string;
