@@ -143,7 +143,7 @@ const EditProfile = () => {
 
                 <div className="d-flex justify-content-between">
                   <Button
-                    variant="secondary"
+                    variant="danger"
                     onClick={() => navigate("/profile")}>
                     Cancel
                   </Button>
