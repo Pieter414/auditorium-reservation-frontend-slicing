@@ -61,7 +61,10 @@ footer.bg-dark {
 } */
 
 /* Adjust badge colors to match the theme */
-
+.badge-bg-item {
+  background-color: #3f4756 !important;
+  color: white !important;  
+}
 
 /* Adjust tab styles to match the theme */
 .nav-link.active {

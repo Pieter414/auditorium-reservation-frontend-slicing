@@ -154,7 +154,7 @@ const MyProposals = () => {
             <Col md={6} lg={4} className="mb-4" key={proposal.id}>
               <Card className="h-100">
                 <Card.Header className="d-flex justify-content-between align-items-center">
-                  <Badge bg="primary">{proposal.title.split(" ")[0]}</Badge>
+                  <Badge bg="item">{proposal.title.split(" ")[0]}</Badge>
                   {getStatusBadge(proposal.status)}
                 </Card.Header>
                 <Card.Body>
