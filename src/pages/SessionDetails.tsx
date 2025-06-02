@@ -451,7 +451,7 @@ const SessionDetails = () => {
 
                   <div className="d-flex justify-content-end gap-2">
                     <Button
-                      variant="secondary"
+                      variant="danger"
                       onClick={() => setShowFeedbackForm(false)}>
                       Cancel
                     </Button>

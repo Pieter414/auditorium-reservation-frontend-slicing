@@ -261,7 +261,7 @@ const CreateProposal = () => {
                 </Form.Group>
 
                 <div className="d-flex justify-content-between">
-                  <Button variant="secondary" onClick={() => navigate(-1)}>
+                  <Button variant="danger" onClick={() => navigate(-1)}>
                     Cancel
                   </Button>
                   <Button variant="primary" type="submit" disabled={isCreating}>

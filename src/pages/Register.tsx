@@ -381,7 +381,7 @@ const Register = () => {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowOtpModal(false)}>
+          <Button variant="danger" onClick={() => setShowOtpModal(false)}>
             Cancel
           </Button>
           <Button

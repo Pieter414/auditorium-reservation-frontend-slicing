@@ -283,7 +283,7 @@ const EditProposal = () => {
 
                 <div className="d-flex justify-content-between">
                   <Button
-                    variant="secondary"
+                    variant="danger"
                     onClick={() => navigate(`/my-proposals/${id}`)}>
                     Cancel
                   </Button>

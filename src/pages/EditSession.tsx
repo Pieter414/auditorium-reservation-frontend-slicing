@@ -315,7 +315,7 @@ const EditSession = () => {
 
                 <div className="d-flex justify-content-between">
                   <Button
-                    variant="secondary"
+                    variant="danger"
                     onClick={() => navigate("/my-sessions")}>
                     Cancel
                   </Button>
